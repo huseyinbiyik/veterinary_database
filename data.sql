@@ -161,3 +161,18 @@ INSERT INTO
   species (name)
 VALUES
   ('Digimon');
+
+-- modify species on animals table
+UPDATE
+  animals
+SET
+  species_id = 2
+WHERE
+  name like '%mon';
+
+UPDATE
+  animals
+SET
+  species_id = 1
+WHERE
+  species_id IS NULL;

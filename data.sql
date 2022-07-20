@@ -176,3 +176,74 @@ SET
   species_id = 1
 WHERE
   species_id IS NULL;
+
+-- modify owners on animals table
+UPDATE
+  animals
+SET
+  owner_id = 1
+where
+  name = 'Agumon';
+
+UPDATE
+  animals
+SET
+  owner_id = 2
+where
+  name = 'Gabumon';
+
+UPDATE
+  animals
+SET
+  owner_id = 2
+where
+  name = 'Pikachu';
+
+UPDATE
+  animals
+SET
+  owner_id = 3
+where
+  name = 'Devimon';
+
+UPDATE
+  animals
+SET
+  owner_id = 3
+where
+  name = 'Plantmon';
+
+UPDATE
+  animals
+SET
+  owner_id = 4
+where
+  name = 'Charmander';
+
+UPDATE
+  animals
+SET
+  owner_id = 4
+where
+  name = 'Squirtle';
+
+UPDATE
+  animals
+SET
+  owner_id = 4
+where
+  name = 'Blossom';
+
+UPDATE
+  animals
+SET
+  owner_id = 5
+where
+  name = 'Angemon';
+
+UPDATE
+  animals
+SET
+  owner_id = 5
+where
+  name = 'Boarmon';

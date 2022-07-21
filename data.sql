@@ -268,3 +268,24 @@ INSERT INTO
   vets (name, age, date_of_graduation)
 VALUES
   ('Jack Harkness', 38, '2008-06-08');
+
+--Adding data for joining specializations file
+INSERT INTO
+  specializations(species_id, vet_id)
+VALUES
+  (1, 1);
+
+INSERT INTO
+  specializations(species_id, vet_id)
+VALUES
+  (1, 3);
+
+INSERT INTO
+  specializations(species_id, vet_id)
+VALUES
+  (2, 3);
+
+INSERT INTO
+  specializations(species_id, vet_id)
+VALUES
+  (2, 4);

@@ -67,3 +67,17 @@ CREATE TABLE vets (
     date_of_graduation DATE NOT NULL,
     PRIMARY KEY(id)
 );
+
+-- Add join/bridging table
+CREATE TABLE specializations (
+    species_id INTEGER REFERENCES species(id),
+    vet_id INTEGER REFERENCES vets(id),
+    PRIMARY KEY (species_id, vet_id)
+);
+
+CREATE TABLE visits (
+    animal_id INTEGER REFERENCES animals(id),
+    vet_id INTEGER REFERENCES vets(id),
+    visit_date date,
+    PRIMARY KEY (animal_id, vet_id)
+);

@@ -82,6 +82,9 @@ CREATE TABLE visits (
     PRIMARY KEY (animal_id, vet_id)
 );
 
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
 --Add indexing for performance
 CREATE INDEX index_animal_id ON visits (animal_id);
 CREATE INDEX index_id_asc on visits(vet_id ASC);
